@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Dreamvids</title>
+    </head>
+    <body>
+       
+            <h1>Dreamvids</h1>
+           
+            <div id="data"></div>
+           
+       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery.js" ></script>
+        <script>
+        $(function() {
+            $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideoInformations&argument=gDM3qj&jsoncallback=?', function(data) {
+                    
+                     $('#data').append('<p><b>Titre</b> : ' + data.title + '</p>');
+                     $('#data').append('<p><b>Auteur</b> : ' + data.author + '</p>');
+                    
+               
+                console.log(data);
+            });
+           
+          });
+        </script>
+       
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
