@@ -22,9 +22,14 @@
         $(function() {
             $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideoInformations&argument=gDM3qj&jsoncallback=?', function(data) {
                     
-                     $('#data').append('<p><b>Titre</b> : ' + data.title + '</p>');
-                     $('#data').append('<p><b>Auteur</b> : ' + data.author + '</p>');
-                    
+                    $('#data').append('<p><b>Titre</b> : ' + data.title + '</p>');
+                    $('#data').append('<p><b>Auteur</b> : ' + data.author + '</p>');
+                    $('#data').append('<p><b>author_url</b> : ' + data.author_url + '</p>');
+                    $('#data').append('<p><b>date</b> : ' + data.date + '</p>');
+                    $('#data').append('<p><b>description</b> : ' + data.description + '</p>');
+                    $('#data').append('<p><b>hour</b> : ' + data.hour + '</p>');
+                    $('#data').append('<p><b>thumb</b> : ' + data.thumb + '</p>');
+                    $('#data').append('<p><b>title</b> : ' + data.title + '</p>');
                
                 console.log(data);
             });
