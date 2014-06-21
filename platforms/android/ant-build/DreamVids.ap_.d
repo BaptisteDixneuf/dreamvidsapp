@@ -38,6 +38,7 @@ E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\index.css \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\logo.png \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\text_logo.png \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\index.js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\jquery.js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\video.js \

@@ -5,8 +5,17 @@ body {
     margin:0px;
     padding:0px;
     width:100%;
-    padding: 20px;
     
+    
+}
+
+h1{
+    background-color: #40a6e0;
+    color: white;
+
+}
+#logo{
+    width: 92px;
 }
 
 *,
