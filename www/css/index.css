@@ -28,6 +28,9 @@ h1 {
     font-size: 40px;
     text-align:center;
     font-weight:normal;
+    position:fixed;
+    top:0px;
+    width: 100%;
 }
 
 h1 span{
@@ -38,6 +41,13 @@ h1 span{
 #menu{
     float: left;
     margin-left: 10px;
+    margin-top: 5px;
+}
+
+#search{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 img {
@@ -45,3 +55,23 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+#data{
+    margin-top: 50px;
+}
+
+.video{
+    
+    border: 1px solid black;
+
+}
+
+.video  img{
+    float: left;
+    width: 45%;
+    padding: 2%;
+}
+.video  h2{
+  font-size: 15px;
+}
+

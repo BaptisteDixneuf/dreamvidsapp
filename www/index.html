@@ -15,17 +15,19 @@
             <h1>
             <i class="fi-list" id="menu"></i>
             Dream<span>Vids</span>
+            <i class="fi-magnifying-glass" id="search"></i>
             </h1>
             <div id="data"></div>
             
 
-            <p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4')">Lire la vidéo</a><p/>
+           <p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4')">Lire la vidéo</a><p/>
 
                                                 
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery.js" ></script>
         <script>
-        $(function() {
+        var getVideo = function(){
+          $(function() {
             $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideoInformations&argument=YL7Psl&jsoncallback=?', function(data) {
 
                     $('#data').append('<img src="' + data.thumb + '">');
@@ -41,6 +43,28 @@
             });
            
           });
+        }
+
+        var getVideos  = function(){
+            $(function() {
+                $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideos&argument=test&jsoncallback=?', function(data) {
+                    for(var i in data){
+                        $('#data').append('<div class="video" id="idvideo'+i+'" >');                        
+                            $('#idvideo'+i).append('<img src="' + data[i].thumb + '">');    
+                            $('#idvideo'+i).append('<h2>' + data[i].title + '</h2>');
+                            $('#idvideo'+i).append('<p><b>Auteur</b> : ' + data[i].author + '</p>');
+                            $('#idvideo'+i).append('<p><b>Vues</b> : ' + data[i].views + '</p>');
+                        $('#data').append('</div>');
+                    }
+                                       
+                    console.log(data);
+                });
+               
+              });
+        }
+
+        getVideos();
+
         </script>
        
         <script type="text/javascript" src="js/index.js"></script>

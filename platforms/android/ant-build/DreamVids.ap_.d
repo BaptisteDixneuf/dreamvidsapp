@@ -330,6 +330,7 @@ E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\svgs\fi-zoom-out.svg \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\foundation-icons \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\foundation-icons.zip \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\logo.png \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\SkypeSetup.exe \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\foundation-icons\foundation-icons \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\index.js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\jquery.js \
