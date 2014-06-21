@@ -14,7 +14,8 @@
             <h1>Dreamvids</h1>
            
             <div id="data"></div>
-           
+             <p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/CrackAndPlay/gDM3qj.wmv_640x360p.mp4')">Play File</a><p/>
+
        
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery.js" ></script>
@@ -28,8 +29,11 @@
                     $('#data').append('<p><b>date</b> : ' + data.date + '</p>');
                     $('#data').append('<p><b>description</b> : ' + data.description + '</p>');
                     $('#data').append('<p><b>hour</b> : ' + data.hour + '</p>');
-                    $('#data').append('<p><b>thumb</b> : ' + data.thumb + '</p>');
-                    $('#data').append('<p><b>title</b> : ' + data.title + '</p>');
+                    var urlvideo='http://dreamvids.fr/uploads/'+data.author+'/'+'gDM3qj'+'.wmv_640x360p.mp4';
+                   
+                   
+                    $('#data').append('<p><b>thumb</b> : <img src="' + data.thumb + '"></p>');
+                   
                
                 console.log(data);
             });
@@ -38,8 +42,13 @@
         </script>
        
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/video.js"></script>
         <script type="text/javascript">
             app.initialize();
+            function playVideo(vidUrl) 
+            {
+                cordova.plugins.videoPlayer.play(vidUrl);
+            }
         </script>
     </body>
 </html>

@@ -35,8 +35,13 @@ E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\index.html \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\index.css \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\logo.png \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\index.js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\jquery.js \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\video.js \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer\www \
+E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer\www\videoplayer.js \
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\AndroidManifest.xml \

@@ -1,4 +1,5 @@
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\classes.dex : \
+E:\wamp\www\dreamvidsapp\platforms\android\ant-build\classes\com\phonegap\plugins\videoplayer\VideoPlayer.class \
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\classes\fr\dreamvids\BuildConfig.class \
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\classes\fr\dreamvids\DreamVids.class \
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\classes\fr\dreamvids\R$attr.class \
