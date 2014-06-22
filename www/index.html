@@ -48,24 +48,27 @@
         var getVideos  = function(search){
             
                 $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideos&argument='+search+'&jsoncallback=?', function(data) {
-                    $( "#data" ).empty();
-                    for(var i in data){
-                        $('#data').append('<div class="video" id="idvideo'+i+'" onclick="getVideo('+"'"+data[i].url+"'"+')">');                        
-                            $('#idvideo'+i).append('<img src="' + data[i].thumb + '">');    
-                            $('#idvideo'+i).append('<h2>' + data[i].title + '</h2>');
-                            $('#idvideo'+i).append('<p><b>Auteur</b> : ' + data[i].author + '</p>');
-                            $('#idvideo'+i).append('<p><b>Vues</b> : ' + data[i].views + '</p>');
-                        $('#data').append('</div>');
-                    }
-                                       
+                    $("#data" ).empty();
+                    if(data.length ==0){
+                        $('#data').append('<p>Aucune video</p>');
+                    }else{
+                        for(var i in data){
+                            $('#data').append('<div class="video" id="idvideo'+i+'" onclick="getVideo('+"'"+data[i].url+"'"+')">');                        
+                                $('#idvideo'+i).append('<img src="' + data[i].thumb + '">');    
+                                $('#idvideo'+i).append('<h2>' + data[i].title + '</h2>');
+                                $('#idvideo'+i).append('<p><b>Auteur</b> : ' + data[i].author + '</p>');
+                                $('#idvideo'+i).append('<p><b>Vues</b> : ' + data[i].views + '</p>');
+                            $('#data').append('</div>');
+                        }
+                    }                  
                     console.log(data);
                 });
                
              
         }
 
-        getVideos("test");
-      
+        getVideos("decouvrir");
+        //getVideo("YL7Psl");
 
         </script>
        
