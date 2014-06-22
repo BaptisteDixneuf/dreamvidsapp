@@ -14,8 +14,10 @@
        
             <h1>
             <i class="fi-list" id="menu"  onclick="getVideos('videoslist')" ></i>
-            Dream<span>Vids</span>
-            <i class="fi-magnifying-glass" id="search"></i>
+            <p>Dream<span>Vids</span>
+                <i class="fi-magnifying-glass" id="search" onclick="search()"></i>
+            </p>
+            
             </h1>
             <div id="data"></div>
             
@@ -77,6 +79,12 @@
              
         }
 
+        var search = function(){
+            $("p" ).empty();
+            $("p" ).append('en dev');
+            /*$("p" ).append('<input type="search" value="recherche" name="rechercher">');
+            $("p" ).append('<input type="search" value="recherche" name="rechercher">');*/
+        }
 
 
         getVideos("videoslist");
