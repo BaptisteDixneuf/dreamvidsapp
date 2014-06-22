@@ -20,14 +20,14 @@
             <div id="data"></div>
             
 
-           <p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4')">Lire la vidéo</a><p/>
+           <!--<p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4')">Lire la vidéo</a><p/>-->
 
                                                 
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery.js" ></script>
+       
         <script>
         var getVideo = function(idvideo){
-         
             $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideoInformations&argument='+idvideo+'&jsoncallback=?', function(data) {
                     $( "#data" ).empty();
                     $('#data').append('<img src="' + data.thumb + '">');
@@ -37,8 +37,8 @@
                     $('#data').append('<p><b>Description</b> : ' + data.description + '</p>');
                     $('#data').append('<p><b>Date</b> : ' + data.date + '</p>');
                     $('#data').append('<p><b>Heure</b> : ' + data.hour + '</p>');
-                    var urlvideo='http://dreamvids.fr/uploads/'+data.author+'/'+'YL7Psl'+'.mp4_640x360p.mp4';
-               
+                    $('#data').append('<p><b>URL</b> : ' + data.url_video[0]['mp4'] + '</p>');
+                    $('#data').append('<p><a href="#" onclick="playVideo(\''+ data.url_video[0]['mp4'] + '\')">Lire la vidéo</a><p/>');
                 console.log(data);
             });
             
@@ -47,7 +47,9 @@
         }
 
         var getVideos  = function(search){
-            
+           
+
+
                 $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideos&argument='+search+'&jsoncallback=?', function(data) {
                     $("#data" ).empty();
                     if(data.length ==0){
@@ -59,10 +61,12 @@
                                 $('#idvideo'+i).append('<h2>' + data[i].title + '</h2>');
                                 $('#idvideo'+i).append('<p><b>Auteur</b> : ' + data[i].author + '</p>');
                                 $('#idvideo'+i).append('<p><b>Vues</b> : ' + data[i].views + '</p>');
+                               
+
                             $('#data').append('</div>');
                         }
                     }                  
-                    console.log(data);
+                    //console.log(data);
                 })
                 .fail(function(){
                     $("#data" ).empty();
