@@ -14,7 +14,7 @@
        
             <h1>
             <i class="fi-list" id="menu"  onclick="getVideos('videoslist')" ></i>
-            <p>Dream<span>Vids</span>
+            <p id="title">Dream<span>Vids</span>
                 <i class="fi-magnifying-glass" id="search" onclick="search()"></i>
             </p>
             
@@ -23,7 +23,11 @@
             
 
            <!--<p><a href="#" onclick="playVideo('http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4')">Lire la vidéo</a><p/>-->
-
+           <!--<video width="100%" controls>
+              <source src="http://dreamvids.fr/uploads/dreamvids/YL7Psl.mp4_640x360p.mp4" type="video/mp4">
+             
+            Your browser does not support the video tag.
+            </video>-->
                                                 
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery.js" ></script>
@@ -32,7 +36,9 @@
         var getVideo = function(idvideo){
             $.getJSON('http://baptistedixneuf.fr/dreamvids/api.php?method=getVideoInformations&argument='+idvideo+'&jsoncallback=?', function(data) {
                     $( "#data" ).empty();
-                    $('#data').append('<img src="' + data.thumb + '">');
+                    $('#data').append('<video width="100%" controls><source src="'+data.url_video[0]['mp4']+'" type="video/mp4">Your browser does not support the video tag.</video>');
+                    //Image poster
+                    /*$('#data').append('<img src="' + data.thumb + '">');*/
                     $('#data').append('<h2>' + data.title + '</h2>');
                     $('#data').append('<p><b>Auteur</b> : ' + data.author + '</p>');
                     $('#data').append('<p><b>Auteur URL</b> : ' + data.author_url + '</p>');                    
@@ -40,8 +46,12 @@
                     $('#data').append('<p><b>Date</b> : ' + data.date + '</p>');
                     $('#data').append('<p><b>Heure</b> : ' + data.hour + '</p>');
                     $('#data').append('<p><b>URL</b> : ' + data.url_video[0]['mp4'] + '</p>');
-                    $('#data').append('<p><a href="#" onclick="playVideo(\''+ data.url_video[0]['mp4'] + '\')">Lire la vidéo</a><p/>');
-                console.log(data);
+                    //Player dans une autre app
+                   // $('#data').append('<p><a href="#" onclick="playVideo(\''+ data.url_video[0]['mp4'] + '\')">Lire la vidéo</a><p/>');
+                   
+                   
+                   
+                    console.log(data);
             });
             
            
@@ -80,10 +90,10 @@
         }
 
         var search = function(){
-            $("p" ).empty();
-            $("p" ).append('en dev');
-            /*$("p" ).append('<input type="search" value="recherche" name="rechercher">');
-            $("p" ).append('<input type="search" value="recherche" name="rechercher">');*/
+            $("#title" ).empty();
+            
+            $("#title" ).append('<input type="search" value="recherche" name="rechercher">');
+          
         }
 
 

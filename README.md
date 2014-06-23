@@ -1,4 +1,4 @@
 dreamvidsapp
 ============
 
-Création d'une app pour http://dreamvids.fr/
+Création d'une application android pour http://dreamvids.fr/
