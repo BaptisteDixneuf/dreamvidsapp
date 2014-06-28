@@ -43,9 +43,10 @@ h1 p{
 
 
 
-input{
+#rechercher{
+    float: left;
     width: 80%;
-    height: 35px;
+    height: 50px;
     background-color: rgba(23, 129, 194, 0.39);
     border: 0px;
     border-bottom: 2px solid white;
