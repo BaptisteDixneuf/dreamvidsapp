@@ -35,7 +35,6 @@ E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\index.html \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\foundation-icons.css \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\foundation-icons.eot \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\foundation-icons.svg \
@@ -327,16 +326,10 @@ E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\svgs\fi-x.svg \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\svgs\fi-yen.svg \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\svgs\fi-zoom-in.svg \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\css\svgs\fi-zoom-out.svg \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\DreamVids-debug-unaligned.apk \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\dreamvidsapp-master.zip \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\foundation-icons \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\logo.png \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\SkypeSetup.exe \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\img\foundation-icons\foundation-icons \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\index.js \
 E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\jquery.js \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\js\video.js \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer\www \
-E:\wamp\www\dreamvidsapp\platforms\android\assets\www\plugins\com.phonegap.plugins.videoplayer\www\videoplayer.js \
 E:\wamp\www\dreamvidsapp\platforms\android\ant-build\AndroidManifest.xml \
